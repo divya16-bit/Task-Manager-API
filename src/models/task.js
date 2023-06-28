@@ -16,6 +16,9 @@ const taskSchema =  new mongoose.Schema({
      type: mongoose.Schema.Types.ObjectId,
      required: true,
      ref: 'User'
+   },
+   taskImage: {
+      type: Buffer
    }
 }, {
      timestamps: true
